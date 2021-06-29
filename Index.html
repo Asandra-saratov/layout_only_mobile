@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С переездом!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/css/owl.theme.default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="page__body">
+    <header class="page-header">
+        <img src="img/logo.png" width="105" height="28" alt="Логотип: С переездом! Легко и просто.">
+        <a class="page-header__link" href="tel:88003014797">8 (800) 301-47-97</a>
+        <!-- пункты меню
+            <nav></nav> -->
+        <button class="toggle toggle--closed" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+        </button>
+    </header>
+
+    <main>
+        <h1 class="visually-hidden">С переездом! Лего и просто.</h1>
+        <section class="cost-calculation">
+            <h2 class="title">Рассчитайте стоимость переезда</h2>
+            <form class="cost-calculation__form form" action="" method="POST">
+                <input class="form__field" type="text" name="from" placeholder="Откуда?">
+                <input class="form__field" type="text" name="where" placeholder="Куда?">
+                <select class="form__field" name="flat">
+                    <option value="1-flat">
+                        1-комн. кв.
+                    </option>
+                    <option value="2-flat">
+                        2-комн. кв.
+                    </option>
+                    <option value="3-flat">
+                        3-комн. кв.
+                    </option>
+                </select>
+                <button class="button" type="submit">Рассчитать стоимость</button>
+            </form>
+        </section>
+
+        <section class="slider-block">
+
+            <div class="slider">
+                <button onclick="previousSlide()" class="slider__button slider__button--back" type="button">
+                    <span class="visually-hidden">Назад.</span>
+                </button>
+                <div class="slider__item">
+                    <img class="slider__img" src="img/slider/slider-img-1.jpg" alt="Переезд семьи.">
+                </div>
+                <div class="slider__item">
+                    <img class="slider__img" src="img/slider/slider-img-2.jpg" alt="Переезд.">
+                </div>
+                <button onclick="nextSlide()" class="slider__button slider__button--forward" type="button">
+                    <span class="visually-hidden">Вперёд.</span>
+                </button>
+            </div>
+
+            <div class="slider-block__wrapper">
+                <h2 class="slider-block__title">Квартирный переезд с легкой
+                    на подъем компанией</h2>
+                <p class="slider-block__text">С легкостью снимем груз хлопот!</p>
+                <a class="slider-block__link button button--color" href="#">Подробнее</a>
+            </div>
+        </section>
+
+        <section class="tracking">
+            <div class="tracking__wrapper">
+                <h2 class="title">Отследить груз</h2>
+                <p>
+                    На нашем сайте Вы можете отследить местоположение своего груза. Для этого скопируйте код доступа,
+                    который Вам пришел на электронную почту, вставьте в поле ниже
+                    и нажмите <span class="tracking__span">"Продолжить"</span>.
+                </p>
+            </div>
+            <img class="tracking__map" src="img/map.png" alt="Карта города.">
+
+            <form class="tracking__form form">
+                <input class="form__field form__field--movizor" type="text" name="movizor"
+                    placeholder="Введите код доступа">
+                <button class="tracking__button" type="submit">Продолжить</button>
+                <p>На технологиях Movizor.ru</p>
+            </form>
+
+            <div class="tracking__text">
+                <p>
+                    * Программа работает по мобильному трекингу телефона водителя. В связи с этим данные о
+                    местоположении
+                    могут поступать
+                    в систему с задержкой.
+                </p>
+                <p>
+                    ** При возникновении любых вопросов звоните своему персональному менеджеру.
+                </p>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <h2 class="title">Отзывы наших клиентов</h2>
+            <div class="feedback__cards owl-carousel">
+                <div class="feedback__item">
+                    <div class="feedback__item-user">
+                        <img class="feedback__img" src="img/feedback/feedback-img-1.jpg" alt="Пользователь.">
+                        <span class="feedback__name">Юрий Капустин</span>
+                        <span class="feedback__date">27 Мая 2019</span>
+                    </div>
+                    <p class="feedback__text">
+                        Спасибо огромное за оперативную работу! Всё
+                        на высшем уровне! Быстро сориентировали и нашли машину. Плюс помогли
+                        с грузчиками. Процветания вашей компании! Отдельное спасибо менеджеру Зайцевой Юлии. За быстрый
+                        расчёт, доброжелательное общение и что были всегда на связи!
+                    </p>
+                </div>
+
+                <div class="feedback__item">
+                    <div class="feedback__item-user">
+                        <img class="feedback__img" src="img/feedback/feedback-img-2.jpg" alt="Пользователь.">
+                        <span class="feedback__name">Наталья Редискина</span>
+                        <span class="feedback__date">27 Мая 2019</span>
+                    </div>
+                    <p class="feedback__text">
+                        Марина, добрый день. Спасибо за вашу организацию! У меня большой опыт переездов
+                        и поверьте, вы отработали
+                        на ура! Будем обязательно
+                        к вам обращаться
+                        при необходимости,
+                        я сохранила ваш контакт. Грузчики были отличными, нареканий нет. Переезд Ярославль-Москва
+                    </p>
+                </div>
+
+                <div class="feedback__item">
+                    <div class="feedback__item-user">
+                        <img class="feedback__img" src="img/feedback/feedback-img-1.jpg" alt="Пользователь.">
+                        <span class="feedback__name">Юрий Капустин</span>
+                        <span class="feedback__date">27 Мая 2019</span>
+                    </div>
+                    <p class="feedback__text">
+                        Спасибо огромное за оперативную работу! Всё
+                        на высшем уровне! Быстро сориентировали и нашли машину. Плюс помогли
+                        с грузчиками. Процветания вашей компании! Отдельное спасибо менеджеру Зайцевой Юлии. За быстрый
+                        расчёт, доброжелательное общение и что были всегда на связи!
+                    </p>
+                </div>
+
+                <div class="feedback__item">
+                    <div class="feedback__item-user">
+                        <img class="feedback__img" src="img/feedback/feedback-img-2.jpg" alt="Пользователь.">
+                        <span class="feedback__name">Наталья Редискина</span>
+                        <span class="feedback__date">27 Мая 2019</span>
+                    </div>
+                    <p class="feedback__text">
+                        Марина, добрый день. Спасибо за вашу организацию! У меня большой опыт переездов
+                        и поверьте, вы отработали
+                        на ура! Будем обязательно
+                        к вам обращаться
+                        при необходимости,
+                        я сохранила ваш контакт. Грузчики были отличными, нареканий нет. Переезд Ярославль-Москва
+                    </p>
+                </div>
+
+            </div>
+            <div class="feedback__link-wrapper">
+                <a class="feedback__link button" href="#">Читать все отзывы</a>
+            </div>
+        </section>
+
+        <section class="social">
+            <h2 class="title">Мы в соцсетях</h2>
+            <ul class="social__list">
+                <li class="social__item social__item--insta">
+                    <img src="img/svg/insta.svg" width="40" height="40" alt="Розовый фон.">
+                    <a href="#">Подписаться в Instagram</a>
+                </li>
+
+                <li class="social__item social__item--vk">
+                    <img src="img/svg/vk.svg" width="40" height="23" alt="Синий фон.">
+                    <a href="#">Подписаться ВКонтакте</a>
+                </li>
+
+                <li class="social__item social__item--odnkl">
+                    <img src="img/svg/odnkl.svg" width="40" height="40" alt="Оранжевый фон.">
+                    <a href="#">Подписаться в Одноклассники</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="order-moving">
+            <h2 class="title">Закажите переезд прямо сейчас!</h2>
+            <form class="order-moving__form form" action="" method="POST">
+                <input class="form__field" type="text" name="name-order-moving" placeholder="Ваше имя">
+                <input class="form__field" type="tel" name="tel-order-moving" placeholder="Ваш телефон">
+                <button class="button" type="submit">Оставить заявку</button>
+                <div class="form__checkbox-wrapper">
+                    <input class="form__checkbox" type="checkbox" name="consent" id="consent-id" checked>
+                    <label class="form__label" for="consent-id">Подтверждаю свое согласие <br> на обработку
+                        <span>персональных данных</span> </label>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>2009 © <span>С переездом!</span> </p>
+        <p>Разработка сайта
+            <img class="page-footer__logo" src="img/space-app.png" alt="Space app.">
+        </p>
+    </footer>
+
+    <script src="js/script-menu.js"></script>
+    <script src="js/script-slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="owl-carousel/js/owl.carousel.js"></script>
+    <script>
+        $(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1.5,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+            });
+        });
+    </script>
+</body>
+
+</html>
